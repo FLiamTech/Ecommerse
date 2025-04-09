@@ -1,0 +1,144 @@
+
+@charset "ISO-8859-1";
+
+/* General */
+body {
+  background-color: #F5E3C3;
+  margin: 0;
+  font-family: 'Verdana', sans-serif;
+  color: #3E2C1C;
+}
+
+/* Títulos */
+h1, h2, h3, h4 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+h1 {
+  color: #5D3A00;
+  font-family: 'Arial', sans-serif;
+}
+
+h2.destacado {
+  color: #C97B43;
+  font-weight: bold;
+}
+
+h4#favorito {
+  color: #D8AC9C;
+}
+
+/* Párrafos */
+p {
+  font-size: 14px;
+  text-align: justify;
+  line-height: 1.6;
+  color: #7B5E47;
+}
+
+/* Layout principal */
+.agrupar {
+  margin: 20px auto;
+  width: 960px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Sección principal */
+section {
+  flex: 3;
+  background: #D8AC9C;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(93, 58, 0, 0.2);
+}
+
+/* Aside */
+aside {
+  flex: 1;
+  background: #F5E3C3;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(93, 58, 0, 0.2);
+}
+
+/* Header */
+header {
+  background-color: #5D3A00;
+  padding: 20px;
+  color: white;
+  border-bottom: 5px solid #D8AC9C;
+}
+
+/* Navigation */
+nav {
+  background-color: #A9744F;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #D8AC9C;
+  color: #3E2C1C;
+}
+
+nav a.active {
+  background-color: #C97B43;
+  color: white;
+}
+
+/* Footer */
+footer {
+  background-color: #5D3A00;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  border-top: 5px solid #D8AC9C;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+footer li img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Imágenes */
+section img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Map iframe */
+aside iframe {
+  border: none;
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+}
